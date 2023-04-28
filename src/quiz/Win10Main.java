@@ -36,18 +36,16 @@ public class Win10Main {
 				System.out.print(">>> ");
 				num = sc.nextInt();
 				ProcessBuilder pro = new ProcessBuilder();
-				switch(num) {
-				case 1 : 
+				if(num==1) {
 					pro.command(calc);
-					break;
-				case 2 : 
+				}
+				else if(num==2) {
 					pro.command(notepad);
-					break;
-				case 3 : 
+				}
+				else if(num==3) {
 					System.out.print("직접입력 : ");
 					msg = sc.next();
 					pro.command(msg);
-					break;
 				}
 				break;
 			}
